@@ -1,0 +1,42 @@
+<div class="jumbotron">
+    <input #term  class="txtStyle" ng-model="ctrWeather.searchLocation" type="text" placeholder="Enter the location...">
+             <button class="buttonclass" ng-click="ctrWeather.getWeatherInfo(ctrWeather.searchLocation)">Get Weather Info</button>		
+<div><br></br></div>
+<div> <b><u>Astronomy</u></b>
+	<ul>
+		<li> <span> <b>Sunrise:</b> {{ ctrWeather.WI.astronomy.sunrise}}</span></li>
+		<li> <span> <b>Sunset:</b> {{ ctrWeather.WI.astronomy.sunset}}</span></li>
+	</ul>
+</div>
+
+<div> <b><u>Atmosphere</u></b>
+	<ul>
+		<li> <span> <b>Humidity:</b> {{ ctrWeather.WI.atmosphere.humidity}}</span></li>
+		<li> <span> <b>Pressure:</b> {{ ctrWeather.WI.atmosphere.pressure}}</span></li>
+		<li> <span> <b>Rising:</b> {{ ctrWeather.WI.atmosphere.rising}}</span></li>
+		<li> <span> <b>Visibility:</b> {{ ctrWeather.WI.atmosphere.visibility}}</span></li>
+	</ul>
+</div>
+<div> <b><u>Forecast</u></b>
+	<ul>
+			<li ng-repeat='forecastDetail in ctrWeather.WI.forecast'>	
+		     <b>Date:</b> <span >{{ forecastDetail.date}}</span></br>
+			 <b>Day:</b> <span style="width:20px;">{{ forecastDetail.day}}</span></br>
+			 <b>High:</b> <span>{{ forecastDetail.high}}</span></br>
+			 <b>Low:</b> <span>{{ forecastDetail.low}}</span></br>
+			 <b>Weather forecast:</b> <span>{{ forecastDetail.text}}</span>		
+			 <br/>
+			 <span>--------------------------------------------</span>
+		</li>
+	</ul>
+</div>
+
+<div> <b><u>Location</u></b>
+	<ul>
+		<li> <span> <b>City:</b> {{ ctrWeather.WI.location.city}}</span></li>
+		<li> <span> <b>Country:</b> {{ ctrWeather.WI.location.country}}</span></li>
+		<li> <span> <b>Region:</b> {{ ctrWeather.WI.location.region}}</span></li>
+	</ul>
+</div>
+
+</div>

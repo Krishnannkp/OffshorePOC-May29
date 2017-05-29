@@ -1,0 +1,32 @@
+
+span {
+    min-width: 100px;
+    padding-left:5px;
+    padding-right: 5px;
+}
+span b{
+    min-width: 30px;
+}
+ul {
+list-style: none;
+}
+.buttonclass {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.btnSpace{
+    margin-top:20px;
+}
+.txtStyle {
+    border-radius: 20px;
+    border: 2px solid #73AD21; 
+    width: 200px;
+    font-size: 15px;
+    height: 20px; 
+}

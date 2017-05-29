@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/1079562214d8a944cd4c0f1b81c33e8a2fe4f025/angular-google-analytics/index.d.ts",
+    "raw": "registry:dt/angular-google-analytics#1.1.8+20170112171743",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/1079562214d8a944cd4c0f1b81c33e8a2fe4f025/angular-google-analytics/index.d.ts"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/TrackJs/trackjs-package/4db13e576d4061b654be338f818149df72649fe1/tracker.d.ts",
+    "raw": "github:TrackJs/trackjs-package/tracker.d.ts#4db13e576d4061b654be338f818149df72649fe1",
+    "typings": "https://raw.githubusercontent.com/TrackJs/trackjs-package/4db13e576d4061b654be338f818149df72649fe1/tracker.d.ts"
+  }
+}
