@@ -33,7 +33,6 @@ describe( 'weatherService', () => {
 
     describe('Weather service', function() {
   it('api call check', function() {
-    // An intentionally failing test. No code within expect() will never equal 4.
    createService();
    lweatherservice = wservice.getWeatherInfo('chennai');
    expect(lweatherservice).toEqual($q.defer().promise);
