@@ -19,11 +19,13 @@ module App {
         this.$http.get(url).then(
             function(response) {
                 deferred.resolve(response.data);
-            },
-            function(errors) {               
+            }).catch((errors)=>
+           {               
                 deferred.reject(errors.data);
-            }
-        );
+                console.log(" Failed on getWeatherInfo call");
+            }).finally (( ) => {
+					console.log("Weather Service method is called sucessfully");
+				});     
 
         return deferred.promise;
 		};	  	

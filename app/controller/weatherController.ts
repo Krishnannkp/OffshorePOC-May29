@@ -4,12 +4,19 @@ module App {
 	export class weatherController {
 
 		public WI: WeatherInfo = <WeatherInfo>{};
+        public returnMessage: string;
         static $inject = ["WeatherService"];
         constructor(private weatherService: WeatherService) {
             this.weatherService = weatherService;
         }
 
-        public getWeatherInfo = (searchLocation: string) => {         
+        public getWeatherInfo = (searchLocation: string) => { 
+            if(searchLocation.length == 0)  
+            {
+                  this.returnMessage = 'failure';
+                   return;   
+            }  
+              
         this.weatherService.getWeatherInfo(searchLocation).then((data: any)=>
         {     
             if(data.query.results!=null)
@@ -21,7 +28,7 @@ module App {
             }
  
        });
-       return this.WI;
+       this.returnMessage = 'success';       
      }          
 	}
 	angular.module(appName).controller("weatherController", weatherController);
